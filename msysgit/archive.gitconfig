@@ -1,0 +1,17 @@
+# This file contains Git configs that I'm not currently using, so that
+# they don't clutter up my main .gitconfig file.
+[alias]
+	bamf = log --format=\"%C(yellow bold)%h%C(reset) %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --decorate
+	divergence = log --format=\"%C(yellow)%h %C(blue bold)%an %C(reset)%s\" --graph --first-parent --left-right
+	elog = log --format=\"%C(yellow bold)%h %C(reset)%s%C(auto)%d\" --graph --decorate
+	linear = log --format=\"%C(yellow bold)%h%C(reset) %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --first-parent
+	# Yes, `multiline` works.
+	multiline = !sh -c 'echo Hello \
+						World.' -
+	slog = log --oneline --graph --decorate --stat
+	syncnetdrive = push netdrive refs/remotes/upstream/*:refs/heads/*
+	who = log --format=\"%C(yellow bold)%h%C(reset) %C(cyan)%an %C(red bold)%cn %C(reset)%s%C(auto)%d\" --graph
+[color "status"]
+	branch = cyan
+[format]
+	pretty = "%C(yellow bold)SHA: %h%n%C(cyan)Author: %aN%n%C(cyan)AuthorDate: %ad%n%C(red)Committer: %cN%n%C(red)CommitDate: %cd%n%n%C(white)%s%C(reset)%n%+b"

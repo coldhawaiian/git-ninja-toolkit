@@ -1,0 +1,78 @@
+[user]
+	name = Keoki Zee
+	email = cold.boston.hawaiian@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+	interactive = auto
+	pager = true
+[color "branch"]
+	upstream = cyan
+[color "diff"]
+	meta = yellow
+	plain = white dim
+	old = red bold
+	new = green bold
+[core]
+	autocrlf = false
+	safecrlf = warn
+[alias]
+	applystash = !sh -c 'git stash apply \"stash@{$1}\"' -
+	bamf = log --format=\"%C(yellow)%h %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --decorate
+	count = count-objects --verbose --human-readable
+	datelog = log --format=\"%C(yellow)%h %C(cyan dim)%aN %C(red bold)%cN%C(reset) %C(cyan dim)%ad %C(red bold)%cd %C(reset)%s\" --graph
+	datereflog = reflog --relative-date
+	divergence = log --oneline --graph --decorate --first-parent --left-right
+	dt = difftool
+	elog = log --format=\"%C(yellow)%h %C(reset)%s%C(auto)%d\" --graph --decorate
+	findbin = !sh -c 'git log --oneline --graph --decorate --stat --color=always $1 | grep Bin' -
+	hook = "!mv .git/hooks/pre-commit.off .git/hooks/pre-commit"
+	linear = log --format=\"%C(yellow)%h %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --first-parent
+	localrefs = show-ref
+	mt = mergetool
+	parserev = !sh -c 'git rev-parse \"$*\" | cut --characters 1-7' -
+	remoterefs = ls-remote
+	repostatus = count-objects --verbose
+	switch = checkout
+	teamfetch = fetch --all --prune
+	undo = "!git reset -- . ; git checkout -- . ; git clean -df; git status"
+	unhook = "!mv .git/hooks/pre-commit .git/hooks/pre-commit.off"
+	verify = fsck --full --strict --no-dangling
+	vim = config --global core.editor vim
+	whitespace = diff --check
+	who = log --format=\"%C(yellow)%h %C(cyan)%an %C(red bold)%cn %C(reset)%s%C(auto)%d\" --graph
+[color "status"]
+	changed = red normal bold
+	untracked = red normal bold
+	nobranch = red bold
+	# changed = red bold
+#[difftool "sourcetree"]
+#	cmd = 'C:/Program Files (x86)/Beyond Compare 3/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+#[mergetool "sourcetree"]
+#	cmd = 'C:/Program Files (x86)/Beyond Compare 3/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+#	trustExitCode = true
+#[mergetool "sm"]
+#	keepBackup = false
+#	trustExitCode = false
+#	cmd = 'C:/Users/keoki.zee/AppData/Local/PlasticSCM4/semanticmerge/semanticmergetool.exe' -b=\"$BASE\" -d=\"$LOCAL\" -s=\"$REMOTE\" -r=\"$MERGED\" -l=csharp -emt=\"mergetool.exe -b=\"\"@basefile\"\" -bn=\"\"@basesymbolic\"\" -s=\"\"@sourcefile\"\" -sn=\"\"@sourcesymbolic\"\" -d=\"\"@destinationfile\"\" -dn=\"\"@destinationsymbolic\"\" -r=\"\"@output\"\" -t=\"\"@filetype\"\" -i=\"\"@comparationmethod\"\" -e=\"\"@fileencoding\"\"\" -edt=\"mergetool.exe  -s=\"\"@sourcefile\"\" -sn=\"\"@sourcesymbolic\"\" -d=\"\"@destinationfile\"\" -dn=\"\"@destinationsymbolic\"\" -t=\"\"@filetype\"\" -i=\"\"@comparationmethod\"\" -e=\"\"@fileencoding\"\"\"
+[push]
+	default = nothing
+#[merge]
+#	tool = bc3
+#[diff]
+#	tool = bc3
+#[difftool "dm"]
+#	cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe \"$LOCAL\" \"$REMOTE\"
+#[difftool "bc3"]
+	# cmd = 'C:/Program Files (x86)/Beyond Compare 3/bcomp.exe \"$LOCAL\" \"$REMOTE\"'
+#	cmd = "\"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\""
+#[mergetool "bc3"]
+#	cmd = "\"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[color "interactive"]
+	prompt = cyan dim
+	help = yellow dim
+[rebase]
+	autosquash = false
+

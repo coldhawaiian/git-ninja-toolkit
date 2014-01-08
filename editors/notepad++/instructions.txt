@@ -1,0 +1,8 @@
+Notepad++ doesn't seem to play nice with using Windows symbolic links
+for its config files. For example, the following causes the Configurator
+in Notepad++ to throw a "Load langs.xml failed! Do you want to recover
+your langs.xml?" error message when the following symlink is used:
+
+MKLINK %HOMEPATH%\AppData\Roaming\Notepad++\langs.xml ^
+       git-ninja-toolkit\editors\notepad++\langs.xml
+

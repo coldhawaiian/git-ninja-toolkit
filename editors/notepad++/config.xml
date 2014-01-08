@@ -13,11 +13,11 @@
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="yes" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="0" y="0" width="683" height="733" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="30" y="27" width="955" height="659" isMaximized="yes" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="hide" currentLineHilitingShow="hide" Wrap="no" edge="line" edgeNbColumn="72" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="aligned" zoom2="0" borderWidth="2" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="hide" Wrap="no" edge="line" edgeNbColumn="72" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="aligned" disableAdvancedScrolling="no" zoom2="0" borderWidth="2" />
         <!-- For the secodary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box" -->
@@ -37,8 +37,8 @@
 					1 -> L_PHP
 					... (see source file)
 		-->
-        <GUIConfig name="NewDocDefaultSettings" format="2" encoding="4" lang="0" codepage="-1" openAnsiAsUTF8="yes" />
-        <GUIConfig name="langsExcluded" gr0="128" gr1="8" gr2="132" gr3="251" gr4="233" gr5="95" gr6="220" gr7="0" langMenuCompact="no" />
+        <GUIConfig name="NewDocDefaultSettings" format="0" encoding="4" lang="0" codepage="-1" openAnsiAsUTF8="yes" />
+        <GUIConfig name="langsExcluded" gr0="128" gr1="8" gr2="128" gr3="251" gr4="237" gr5="127" gr6="95" gr7="0" langMenuCompact="no" />
         <!--
 		printOption is print colour setting, the following values are possible :
 			0 : WYSIWYG
@@ -59,43 +59,44 @@
         <!--
 			value 0 for the folloing parameters means invisible :
 			leftWidth, topHight, rightWidth, bottomHight
-
+			
 					position value for the PluginDlg:
-
+						
 						0 : left
 						 1 : right
 						2 : top
 						3 : bottom
 						>= 4 : undocked -> FloatingWindow id
 			-->
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20130712">no</GUIConfig>
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20140122">no</GUIConfig>
         <GUIConfig name="MaitainIndent">yes</GUIConfig>
         <GUIConfig name="MRU">yes</GUIConfig>
         <GUIConfig name="URL">2</GUIConfig>
         <GUIConfig name="globalOverride" fg="no" bg="no" font="yes" fontSize="yes" bold="no" italic="yes" underline="no" />
         <GUIConfig name="auto-completion" autoCAction="2" triggerFromNbChar="1" funcParams="no" />
+        <GUIConfig name="multiInst" setting="0" />
         <GUIConfig name="sessionExt"></GUIConfig>
         <GUIConfig name="SmartHighLight">yes</GUIConfig>
         <GUIConfig name="SmartHighLightCaseSensitive">no</GUIConfig>
-        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="yes">yes</GUIConfig>
+        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="no">yes</GUIConfig>
+        <GUIConfig name="auto-insert" parentheses="no" brackets="no" curlyBrackets="no" quotes="no" doubleQuotes="no" htmlXmlTag="no" />
         <GUIConfig name="MenuBar">show</GUIConfig>
         <GUIConfig name="Caret" width="1" blinkRate="250" />
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
         <GUIConfig name="stylerTheme" path="C:\Program Files (x86)\Notepad++\themes\Zenburn.xml" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="44082" curr="0" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
-            <ActiveTabs cont="0" activeTab="-1" />
+        <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
+        <GUIConfig name="DockingManager" leftWidth="140" rightWidth="200" topHeight="200" bottomHeight="200">
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="yes" />
+            <ActiveTabs cont="0" activeTab="0" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
             <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="2" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
     <History nbMaxFile="15" inSubMenu="no" customLength="-1" />
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />

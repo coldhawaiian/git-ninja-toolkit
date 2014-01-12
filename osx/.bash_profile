@@ -35,5 +35,5 @@ alias reflog='git reflog --relative-date'
 alias remote='git branch -r | grep'
 alias slog='glog --stat'
 alias stash='git stash'
+alias sublime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias switch='git checkout'
-

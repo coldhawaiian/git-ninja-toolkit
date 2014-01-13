@@ -61,10 +61,10 @@
 	default = nothing
 #[merge]
 #	tool = bc3
-#[diff]
-#	tool = bc3
-#[difftool "dm"]
-#	cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = dm
+[difftool "dm"]
+	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\""
 #[difftool "bc3"]
 	# cmd = 'C:/Program Files (x86)/Beyond Compare 3/bcomp.exe \"$LOCAL\" \"$REMOTE\"'
 #	cmd = "\"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\""

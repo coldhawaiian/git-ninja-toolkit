@@ -1,4 +1,5 @@
 PATH='/usr/local/bin:'"$PATH"
+PATH="$PATH""/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 
 source '/usr/local/etc/bash_completion.d/git-completion.bash'
 source '/usr/local/etc/bash_completion.d/git-prompt.sh'

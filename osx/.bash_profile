@@ -1,5 +1,7 @@
 #!/usr/local/bin/python
 PATH='/usr/local/bin:'"$PATH"
+# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 PATH="$PATH""/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 
 source '/usr/local/etc/bash_completion.d/git-completion.bash'
@@ -12,7 +14,8 @@ PS1="$PS1"'$(__git_ps1 " \[\e[0m\](\[\e[0;36m\]%s\[\e[0m\])") '
 PS1="$PS1"'\[\e[0;35m\]'
 PS1="$PS1"'\[\e \D{%I:%M:%S %p}\[\e[0m\]\n$ '
 
-alias ls='ls -a'
+# This gls alias requires the Homebrew coreutils package
+alias ls='gls --all --group-directories-first --color=auto'
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'
 alias reload='source ~/.bash_profile'

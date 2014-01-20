@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 PATH='/usr/local/bin:'"$PATH"
 PATH="$PATH""/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 
@@ -38,3 +39,7 @@ alias slog='glog --stat'
 alias stash='git stash'
 alias sublime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias switch='git checkout'
+
+function serve() {
+    python -m SimpleHTTPServer "$1";
+}

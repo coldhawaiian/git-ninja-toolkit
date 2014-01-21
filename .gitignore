@@ -1,0 +1,3 @@
+# Ignore OS X files
+.DS_Store
+.swp

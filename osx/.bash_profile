@@ -14,7 +14,8 @@ PS1="$PS1"'$(__git_ps1 " \[\e[0m\](\[\e[0;36m\]%s\[\e[0m\])") '
 PS1="$PS1"'\[\e[0;35m\]'
 PS1="$PS1"'\[\e \D{%I:%M:%S %p}\[\e[0m\]\n$ '
 
-# This gls alias requires the Homebrew coreutils package
+# These g* aliases require the Homebrew coreutils package
+alias du='gdu'
 alias ls='gls --all --group-directories-first --color=auto'
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'

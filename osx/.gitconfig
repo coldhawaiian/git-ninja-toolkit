@@ -71,7 +71,7 @@
 #[mergetool "bc3"]
 #	cmd = "\"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
 [color "interactive"]
-	prompt = cyan dim
+	prompt = magenta
 	help = yellow dim
 [rebase]
 	autosquash = false

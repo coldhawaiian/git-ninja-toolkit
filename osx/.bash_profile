@@ -17,9 +17,12 @@ PS1="$PS1"'\[\e \D{%I:%M:%S %p}\[\e[0m\]\n$ '
 # These g* aliases require the Homebrew coreutils package
 alias du='gdu'
 alias ls='gls --all --group-directories-first --color=auto'
+
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'
 alias reload='source ~/.bash_profile'
+source ".workdir" # Define $GITHUB_DIR in this file
+alias workdir="cd $GITHUB_DIR"
 
 alias ga='git add'
 alias gai='git add --interactive'

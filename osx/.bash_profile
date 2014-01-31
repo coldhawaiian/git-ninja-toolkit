@@ -21,7 +21,7 @@ alias ls='gls --all --group-directories-first --color=auto'
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'
 alias reload='source ~/.bash_profile'
-source ".workdir" # Define $GITHUB_DIR in this file
+source "/Users/$USER/.workdir" # Define $GITHUB_DIR in this file
 alias workdir="cd $GITHUB_DIR"
 
 alias ga='git add'

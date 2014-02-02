@@ -1,3 +1,5 @@
 {
-  "tab_size": 2
+  "detect_indentation": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": false
 }

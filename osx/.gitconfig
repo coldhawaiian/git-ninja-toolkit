@@ -20,6 +20,18 @@
 	safecrlf = warn
 [alias]
 	applystash = !sh -c 'git stash apply \"stash@{$1}\"' -
+	# This `backup` alias will OVER-WRITE work on your remote, so make
+	# sure that you actually want to do this before using it.
+	#
+	# If you do accidentally force push, you should still be able to
+	# recover the previous commit from your remote via your local reflogs
+	# (use `git reflog <remote>/<branch>`), at least until Git runs
+	# garbage collection on your local repo (don't execute `git gc` until
+	# you've recovered your commit).
+	#
+	# I might make `--force` into an optional argument to the alias in the
+	# future.
+	backup = "!git add --all . && git commit --message 'Backup' && git push --force origin HEAD && git reset HEAD^"
 	bamf = log --format=\"%C(yellow)%h %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --decorate
 	count = count-objects --verbose --human-readable
 	datelog = log --format=\"%C(yellow)%h %C(cyan dim)%aN %C(red bold)%cN%C(reset) %C(cyan dim)%ad %C(red bold)%cd %C(reset)%s\" --graph

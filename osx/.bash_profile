@@ -18,6 +18,9 @@ PS1="$PS1"'\[\e \D{%I:%M:%S %p}\[\e[0m\]\n$ '
 alias du='gdu'
 alias ls='gls --all --group-directories-first --color=auto'
 
+# Have `less` display color output by default
+alias less='less --RAW-CONTROL-CHARS'
+
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'
 alias reload='source ~/.bash_profile'

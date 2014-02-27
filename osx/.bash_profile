@@ -15,7 +15,9 @@ esac
 
 # PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-PATH="$PATH""/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+
+# Run this to set up Sublime Text alias:
+# `ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/sublime`
 
 source '/usr/local/etc/bash_completion.d/git-completion.bash'
 source '/usr/local/etc/bash_completion.d/git-prompt.sh'
@@ -60,7 +62,6 @@ alias reflog='git reflog --relative-date'
 alias remote='git branch -r | grep'
 alias slog='glog --stat'
 alias stash='git stash'
-alias sublime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias switch='git checkout'
 
 function serve() {

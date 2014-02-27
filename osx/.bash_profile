@@ -1,5 +1,18 @@
 #!/usr/local/bin/python
-PATH='/usr/local/bin:'"$PATH"
+
+# Modified from http://superuser.com/a/580611/86416.
+# Requires `mkdir ~/bin` and symlinking the Homebrew executables that
+# you want to use.
+case ":$PATH:" in
+    *:$HOME/bin:*)
+        # Do nothing if $PATH already contains $HOME/bin
+    ;;
+    *)
+        # In every other case, add it to the front
+        PATH=$HOME/bin:$PATH
+    ;;
+esac
+
 # PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 PATH="$PATH""/Applications/Sublime Text.app/Contents/SharedSupport/bin"
@@ -52,4 +65,7 @@ alias switch='git checkout'
 
 function serve() {
     python -m SimpleHTTPServer "$1";
+}
+function list-paths() {
+    ruby -e 'ENV["PATH"].split(":").each { |path| puts path }'
 }

@@ -1,5 +1,9 @@
 #!/usr/local/bin/python
 
+# Initialize rbenv,
+# https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
+eval "$(rbenv init -)"
+
 # Modified from http://superuser.com/a/580611/86416.
 # Requires `mkdir ~/bin` and symlinking the Homebrew executables that
 # you want to use.

@@ -40,6 +40,9 @@ alias ls='gls --all --group-directories-first --color=auto'
 # Have `less` display color output by default
 alias less='less --RAW-CONTROL-CHARS'
 
+# Show all processes with users
+alias procs='ps aux'
+
 alias config-bash='vim ~/.bash_profile'
 alias config-vim='vim ~/.vimrc'
 alias reload='source ~/.bash_profile'

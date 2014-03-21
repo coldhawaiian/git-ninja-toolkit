@@ -1,5 +1,8 @@
 #!/usr/local/bin/python
 
+# Setup PATH for Homebrew packages
+export PATH=/usr/local/bin:$PATH
+
 # Initialize rbenv,
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 eval "$(rbenv init -)"

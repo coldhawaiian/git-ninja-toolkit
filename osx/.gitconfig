@@ -18,6 +18,7 @@
 [core]
 	autocrlf = false
 	safecrlf = warn
+	excludesfile = /Users/keoki/.global-gitignore
 [alias]
 	applystash = !sh -c 'git stash apply \"stash@{$1}\"' -
 	# This `backup` alias will OVER-WRITE work on your remote, so make

@@ -74,6 +74,8 @@ alias slog='glog --stat'
 alias stash='git stash'
 alias switch='git checkout'
 
+alias drjava="java -jar $HOME/drjava"
+
 function serve() {
     python -m SimpleHTTPServer "$1";
 }

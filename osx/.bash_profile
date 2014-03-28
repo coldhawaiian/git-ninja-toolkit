@@ -3,6 +3,10 @@
 # Setup PATH for Homebrew packages
 export PATH=/usr/local/bin:$PATH
 
+# Setup Scala variables
+export SCALA_HOME=/usr/local/Frameworks/scala # Symlinked directory
+export PATH=$PATH:$SCALA_HOME/bin
+
 # Initialize rbenv,
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 eval "$(rbenv init -)"

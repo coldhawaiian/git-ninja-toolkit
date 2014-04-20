@@ -79,6 +79,7 @@ alias stash='git stash'
 alias switch='git checkout'
 
 alias drjava="java -jar $HOME/drjava"
+alias clip='pbcopy'
 
 function serve() {
     python -m SimpleHTTPServer "$1";

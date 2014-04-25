@@ -42,6 +42,7 @@
 	elog = log --format=\"%C(yellow)%h %C(reset)%s%C(auto)%d\" --graph --decorate
 	findbin = !sh -c 'git log --oneline --graph --decorate --stat --color=always $1 | grep Bin' -
 	hook = "!mv .git/hooks/pre-commit.off .git/hooks/pre-commit"
+	inspect = cat-file -p
 	linear = log --format=\"%C(yellow)%h %C(cyan)%an %C(reset)%s%C(auto)%d\" --graph --first-parent
 	localrefs = show-ref
 	mt = mergetool

@@ -11,7 +11,7 @@
 [color "branch"]
 	upstream = cyan
 [color "diff"]
-	meta = yellow
+	meta = cyan
 	plain = white dim
 	old = red bold
 	new = green bold

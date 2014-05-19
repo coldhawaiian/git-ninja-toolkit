@@ -1,3 +1,6 @@
 # Ignore OS X files
 .DS_Store
 .swp
+
+# Ignore Vim history file
+osx/.vim/.netrwhist

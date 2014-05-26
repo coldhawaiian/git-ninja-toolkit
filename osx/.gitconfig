@@ -15,6 +15,8 @@
 	plain = white dim
 	old = red bold
 	new = green bold
+	frag = magenta dim
+	func = white dim
 [core]
 	autocrlf = false
 	safecrlf = warn
@@ -72,7 +74,7 @@
 #	trustExitCode = false
 #	cmd = 'C:/Users/keoki.zee/AppData/Local/PlasticSCM4/semanticmerge/semanticmergetool.exe' -b=\"$BASE\" -d=\"$LOCAL\" -s=\"$REMOTE\" -r=\"$MERGED\" -l=csharp -emt=\"mergetool.exe -b=\"\"@basefile\"\" -bn=\"\"@basesymbolic\"\" -s=\"\"@sourcefile\"\" -sn=\"\"@sourcesymbolic\"\" -d=\"\"@destinationfile\"\" -dn=\"\"@destinationsymbolic\"\" -r=\"\"@output\"\" -t=\"\"@filetype\"\" -i=\"\"@comparationmethod\"\" -e=\"\"@fileencoding\"\"\" -edt=\"mergetool.exe  -s=\"\"@sourcefile\"\" -sn=\"\"@sourcesymbolic\"\" -d=\"\"@destinationfile\"\" -dn=\"\"@destinationsymbolic\"\" -t=\"\"@filetype\"\" -i=\"\"@comparationmethod\"\" -e=\"\"@fileencoding\"\"\"
 [push]
-	default = current 
+	default = current
 #[merge]
 #	tool = bc3
 [diff]
@@ -85,8 +87,8 @@
 #[mergetool "bc3"]
 #	cmd = "\"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
 [color "interactive"]
-	prompt = magenta
-	help = yellow dim
+	prompt = white
+	help = yellow
 [rebase]
 	autosquash = false
 

@@ -1,14 +1,14 @@
 #!/usr/local/bin/python
 
+# Setup Postgre.app path
+PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
 # Setup PATH for Homebrew packages
 export PATH=/usr/local/bin:$PATH
 
 # Setup Scala variables
 export SCALA_HOME=/usr/local/Frameworks/scala # Symlinked directory
 export PATH=$PATH:$SCALA_HOME/bin
-
-# Setup Postgre.app path
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
 # Initialize rbenv,
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x

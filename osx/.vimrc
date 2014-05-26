@@ -7,4 +7,4 @@ set shiftwidth=4
 set tabstop=2
 set textwidth=80
 syntax on
-colorscheme molokai
+colorscheme default

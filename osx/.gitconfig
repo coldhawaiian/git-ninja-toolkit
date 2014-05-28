@@ -15,8 +15,8 @@
 	plain = white dim
 	old = red bold
 	new = green bold
-	frag = magenta dim
-	func = white dim
+	frag = white ul
+	func = blue
 [core]
 	autocrlf = false
 	safecrlf = warn

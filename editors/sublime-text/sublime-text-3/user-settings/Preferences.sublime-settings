@@ -1,14 +1,18 @@
 {
 	"auto_indent": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Base16/base16-tomorrow.dark.tmTheme",
+
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
 	"font_size": 14,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"AngularJS",
+		"Monokai Extended",
+		"Vintage",
+		"Markdown Preview",
+		"Theme - Flatland"
 	],
 	"rulers":
 	[
@@ -17,7 +21,7 @@
 	"scroll_past_end": true,
 	"spell_check": false,
 	"tab_size": 4,
-	"theme": "Flatland Dark.sublime-theme",
+
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true

@@ -95,5 +95,8 @@ function list-paths() {
     ruby -e 'ENV["PATH"].split(":").each { |path| puts path }'
 }
 
+alias chrome='open -a "Google Chrome"'
+alias firefox='open -a "Firefox"'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

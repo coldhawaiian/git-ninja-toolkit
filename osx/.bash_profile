@@ -36,9 +36,10 @@ esac
 source '/usr/local/etc/bash_completion.d/git-completion.bash'
 source '/usr/local/etc/bash_completion.d/git-prompt.sh'
 
-PS1='\[\e[0;32m\]'
-PS1="$PS1"'\u@\h '                  # user@host<space>
-PS1="$PS1"'\[\e[0;33m\]\w'          # Current workding directory.
+# PS1='\[\e[1;31m\]\u'              # (Red) user
+PS1='\[\e[0;36m\]\u'                # (Cyan) user
+PS1="$PS1"'\[\e[0;32m\]@\h '        # (Green) @host<space>
+PS1="$PS1"'\[\e[0;33m\]\w'          # (Yellow) Current working directory.
 PS1="$PS1"'$(__git_ps1 " \[\e[0m\](\[\e[0;36m\]%s\[\e[0m\])") '
 PS1="$PS1"'\[\e[0;35m\]'
 PS1="$PS1"'\[\e \D{%I:%M:%S %p}\[\e[0m\]\n$ '
